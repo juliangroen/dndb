@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        align-items: center;
+        background-color: lighten($color: lightgray, $amount: 10);
+        border-radius: 0.4rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.6rem;
+        font-weight: bold;
+        height: 12rem;
+        justify-content: center;
+        margin: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+        width: 20rem;
+
+        &:hover {
+            background-color: lightgray;
+        }
+
+        a {
+            color: slateblue;
+            text-decoration: none;
+        }
+    }
+}
