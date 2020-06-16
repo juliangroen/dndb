@@ -5,3 +5,18 @@ body {
     font-family: monospace;
     font-size: 10px;
 }
+
+.card {
+    align-items: center;
+    background-color: lighten($color: lightgray, $amount: 10);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 1rem;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}

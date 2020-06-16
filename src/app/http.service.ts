@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class HttpService {
     constructor(private http: HttpClient) {}
 
-    getMonsters() {
-        return this.http.get('https://www.dnd5eapi.co/api/monsters');
+    getItems(type: String) {
+        return this.http.get(`https://www.dnd5eapi.co/api/${type}`);
     }
 }

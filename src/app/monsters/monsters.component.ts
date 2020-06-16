@@ -12,7 +12,7 @@ export class MonstersComponent implements OnInit {
     constructor(private _http: HttpService) {}
 
     ngOnInit(): void {
-        this._http.getMonsters().subscribe((data) => {
+        this._http.getItems('monsters').subscribe((data) => {
             const someMonsters: Object[] = [];
             for (let index = 64; index < 127; index++) {
                 const element = data.results[index];

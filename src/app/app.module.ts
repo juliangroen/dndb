@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { MonstersComponent } from './monsters/monsters.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ClassesComponent } from './classes/classes.component';
 
 @NgModule({
-    declarations: [AppComponent, MonstersComponent],
+    declarations: [AppComponent, MonstersComponent, ClassesComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
     providers: [],
     bootstrap: [AppComponent],
