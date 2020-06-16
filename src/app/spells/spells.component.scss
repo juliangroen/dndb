@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    li {
+        font-size: 1.6rem;
+        font-weight: bold;
+        height: 4rem;
+        width: 32rem;
+
+        a {
+            color: slateblue;
+            text-decoration: none;
+        }
+    }
+}

@@ -12,14 +12,8 @@ export class MonstersComponent implements OnInit {
     constructor(private _http: HttpService) {}
 
     ngOnInit(): void {
-        this._http.getItems('monsters').subscribe((data) => {
-            const someMonsters: Object[] = [];
-            for (let index = 64; index < 127; index++) {
-                const element = data.results[index];
-                someMonsters.push(element);
-            }
-            this.monsters = someMonsters;
-            //this.monsters = data.results;
+        this._http.getItems('monsters').subscribe((data: any) => {
+            this.monsters = data.results;
         });
     }
 }

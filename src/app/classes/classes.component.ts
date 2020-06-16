@@ -12,7 +12,7 @@ export class ClassesComponent implements OnInit {
     constructor(private _http: HttpService) {}
 
     ngOnInit(): void {
-        this._http.getItems('classes').subscribe((data) => {
+        this._http.getItems('classes').subscribe((data: any) => {
             this.classes = data.results;
         });
     }
