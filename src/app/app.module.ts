@@ -8,9 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ClassesComponent } from './classes/classes.component';
 import { SpellsComponent } from './spells/spells.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-    declarations: [AppComponent, MonstersComponent, ClassesComponent, SpellsComponent],
+    declarations: [AppComponent, MonstersComponent, ClassesComponent, SpellsComponent, HomeComponent],
     imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
     providers: [],
     bootstrap: [AppComponent],
