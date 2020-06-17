@@ -3,8 +3,6 @@
 nav {
     background-color: $primaryColor;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     font-size: 1.6rem;
     text-align: center;
 
@@ -13,30 +11,55 @@ nav {
         margin: 0;
         padding: 0;
 
-        li a {
+        a {
+            color: snow;
+            display: block;
+            padding: 0.5rem;
+            text-decoration: none;
+
             &:hover {
+                background-color: $primaryDark;
+            }
+        }
+
+        a.logo {
+            background: $primaryDark;
+            font-size: 2.4rem;
+
+            &:hover {
+                background-color: $primaryColor;
+                font-weight: bolder;
             }
         }
     }
 
-    a {
-        color: snow;
-        display: block;
-        padding: 0.5rem;
-        text-decoration: none;
+    @media screen and (min-width: $medium) {
+        ul {
+            align-items: center;
+            display: flex;
+            justify-content: center;
 
-        &:hover {
-            background-color: $primaryDark;
+            a {
+                padding-right: 1rem;
+            }
+
+            a.logo {
+                margin-right: 1rem;
+            }
         }
     }
 
-    a.logo {
-        background: $primaryDark;
-        font-size: 2.4rem;
+    @media screen and (min-width: $large) {
+        ul {
+            justify-content: unset;
 
-        &:hover {
-            background-color: $primaryColor;
-            font-weight: bolder;
+            a {
+                padding-right: 2rem;
+            }
+
+            a.logo {
+                margin-right: 2rem;
+            }
         }
     }
 }
