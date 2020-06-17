@@ -1,9 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+// media query breakpoints
+$smll: 320px;
+$medium: 768px;
+$large: 1200px;
+
+$primaryColor: slateblue;
+$primaryDark: darken(slateblue, 5%);
+
 body {
     box-sizing: border-box;
     margin: 0;
     font-family: monospace;
     font-size: 10px;
+}
+
+.card-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
 }
 
 .card {

@@ -1,42 +1,42 @@
 @import "../styles.scss";
 
-header {
-    align-items: center;
-    background: slateblue;
+nav {
+    background-color: $primaryColor;
+    padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1.6rem;
-    margin: 0 0 1rem 0;
-    a {
-        color: snow;
-        text-decoration: none;
-    }
+    text-align: center;
 
-    a.logo {
-        background-color: darken($color: slateblue, $amount: 4);
-        font-size: 3.2rem;
-        padding: 1rem;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-        &:hover {
-            font-weight: bolder;
+        li a {
+            &:hover {
+            }
         }
     }
 
-    nav {
-        ul {
-            list-style: none;
-            margin: 0;
-            display: flex;
+    a {
+        color: snow;
+        display: block;
+        padding: 0.5rem;
+        text-decoration: none;
 
-            li a {
-                margin: 0 1rem 0 0;
-                padding: 1rem;
+        &:hover {
+            background-color: $primaryDark;
+        }
+    }
 
-                &:hover {
-                    background-color: darken($color: slateblue, $amount: 4);
-                    border-radius: 2rem;
-                }
-            }
+    a.logo {
+        background: $primaryDark;
+        font-size: 2.4rem;
+
+        &:hover {
+            background-color: $primaryColor;
+            font-weight: bolder;
         }
     }
 }
