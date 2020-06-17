@@ -1,0 +1,21 @@
+@import "../../styles.scss";
+
+section {
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    @media screen and (min-width: $medium) {
+        h1 {
+            font-size: 3.2rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}
