@@ -1,5 +1,7 @@
 <ul class="card-list" *ngIf="monsters">
     <li class="card" *ngFor="let monster of monsters">
-        <a href="#" class="name">{{ monster.name }}</a>
+        <a href="#" class="name" [routerLink]="['/monsters', monster.index]">{{
+            monster.name
+        }}</a>
     </li>
 </ul>
