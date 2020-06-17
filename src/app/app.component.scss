@@ -40,7 +40,12 @@ nav {
             justify-content: center;
 
             a {
-                padding-right: 1rem;
+                margin-right: 1rem;
+                padding: 0.5rem;
+
+                &:hover {
+                    border-radius: 4rem;
+                }
             }
 
             a.logo {
@@ -54,7 +59,7 @@ nav {
             justify-content: unset;
 
             a {
-                padding-right: 2rem;
+                margin-right: 2rem;
             }
 
             a.logo {
