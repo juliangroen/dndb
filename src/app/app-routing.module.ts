@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MonstersComponent } from './monsters/monsters.component';
+import { MonsterDetailComponent } from './monsters/monster-detail/monster-detail.component';
 import { ClassesComponent } from './classes/classes.component';
 import { SpellsComponent } from './spells/spells.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'monsters', component: MonstersComponent },
+    { path: 'monsters/:id', component: MonsterDetailComponent },
     { path: 'classes', component: ClassesComponent },
     { path: 'spells', component: SpellsComponent },
 ];

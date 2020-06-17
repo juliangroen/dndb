@@ -10,4 +10,8 @@ export class HttpService {
     getItems(type: String) {
         return this.http.get(`https://www.dnd5eapi.co/api/${type}`);
     }
+
+    getDetails(path: String) {
+        return this.http.get(`https://www.dnd5eapi.co/api${path}`);
+    }
 }
