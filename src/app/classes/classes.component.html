@@ -1,5 +1,7 @@
 <ul class="card-list" *ngIf="classes">
     <li class="card" *ngFor="let class of classes">
-        <a href="#" class="name">{{ class.name }}</a>
+        <a href="#" class="name" [routerLink]="['/classes', class.index]">{{
+            class.name
+        }}</a>
     </li>
 </ul>

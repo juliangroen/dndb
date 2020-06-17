@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 // media query breakpoints
-$smll: 320px;
+$small: 320px;
 $medium: 768px;
 $large: 1200px;
 
 $primaryColor: slateblue;
 $primaryDark: darken(slateblue, 5%);
+$cardColor: lighten(lightgray, 10%);
 
 body {
     box-sizing: border-box;
@@ -25,7 +26,7 @@ body {
 
 .card {
     align-items: center;
-    background-color: lighten($color: lightgray, $amount: 10);
+    background-color: $cardColor;
     border-radius: 0.4rem;
     display: flex;
     flex-wrap: wrap;
@@ -36,4 +37,38 @@ body {
     &:hover {
         background-color: lightgray;
     }
+}
+
+.detail-card {
+    background-color: $cardColor;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 24rem;
+
+    @media screen and (min-width: $medium) {
+        max-width: 32rem;
+    }
+
+    @media screen and (min-width: $large) {
+        max-width: 64rem;
+    }
+}
+
+.detail-description {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 0.5rem;
+    text-align: justify;
+}
+
+.detail-title {
+    color: $primaryColor;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.detail-list {
+    font-size: 1.2rem;
+    list-style: none;
 }
