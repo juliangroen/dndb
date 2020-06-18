@@ -8,7 +8,7 @@ import { HttpService } from '../../http.service';
     styleUrls: ['./class-detail.component.scss'],
 })
 export class ClassDetailComponent implements OnInit {
-    details: Object;
+    details: Object = {};
 
     constructor(private _http: HttpService, private router: Router) {}
 

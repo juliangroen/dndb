@@ -1,6 +1,18 @@
 <div class="detail-card">
     <h1 class="detail-title">{{ details["name"] }}</h1>
     <ul class="detail-list">
-        <li>Hit Die: {{ details["hit_die"] }}</li>
+        <li>Hit Die: d{{ details["hit_die"] }}</li>
+        <li class="detail-sub-title">Subclasses:</li>
+        <ul class="" *ngFor="let class of details['subclasses']">
+            <li>{{ class["name"] }}</li>
+        </ul>
+        <li class="detail-sub-title">Proficiencies:</li>
+        <ul class="" *ngFor="let prof of details['proficiencies']">
+            <li>{{ prof["name"] }}</li>
+        </ul>
+        <li class="detail-sub-title">Saving Throws:</li>
+        <ul class="" *ngFor="let throw of details['saving_throws']">
+            <li>{{ throw["name"] }}</li>
+        </ul>
     </ul>
 </div>
